@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://localhost/</loc>
+    <loc>https://kenpu.github.io/database-yz/</loc>
   </url>
   
   <url>
-    <loc>http://localhost/footer/</loc>
+    <loc>https://kenpu.github.io/database-yz/footer/</loc>
   </url>
   
   <url>
-    <loc>http://localhost/header/</loc>
+    <loc>https://kenpu.github.io/database-yz/header/</loc>
   </url>
   
   <url>
-    <loc>http://localhost/lessons/01/</loc>
+    <loc>https://kenpu.github.io/database-yz/lessons/01/</loc>
   </url>
   
   <url>
-    <loc>http://localhost/lessons/sandbox/</loc>
+    <loc>https://kenpu.github.io/database-yz/lessons/sandbox/</loc>
   </url>
   
 </urlset>

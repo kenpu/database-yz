@@ -1,4 +1,4 @@
-baseurl = "http://localhost"
+baseurl = "https://kenpu.github.io/database-yz/"
 languageCode = "en-us"
 title = "Database Systems"
 publishDir = "docs"

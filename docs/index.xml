@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Database Systems</title>
-    <link>http://localhost/index.xml</link>
+    <link>https://kenpu.github.io/database-yz/index.xml</link>
     <description>Recent content on Database Systems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kenpu.github.io/database-yz/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title></title>
-      <link>http://localhost/footer/</link>
+      <link>https://kenpu.github.io/database-yz/footer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/footer/</guid>
+      <guid>https://kenpu.github.io/database-yz/footer/</guid>
       <description>&lt;div style=&#34;position: fixed;
             bottom: 0;
             left: 0;
@@ -26,10 +26,10 @@ Ying Zhu &lt;span class=&#34;fa fa-copyright&#34;&gt;&lt;/span&gt;, 2017
     
     <item>
       <title></title>
-      <link>http://localhost/header/</link>
+      <link>https://kenpu.github.io/database-yz/header/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/header/</guid>
+      <guid>https://kenpu.github.io/database-yz/header/</guid>
       <description>
 
 &lt;h1 id=&#34;database-systems-infr-3810&#34;&gt;Database Systems (INFR 3810)&lt;/h1&gt;
@@ -56,10 +56,10 @@ Oshawa, ON, Canada&lt;/p&gt;
     
     <item>
       <title>Tables everywhere</title>
-      <link>http://localhost/lessons/01/</link>
+      <link>https://kenpu.github.io/database-yz/lessons/01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/lessons/01/</guid>
+      <guid>https://kenpu.github.io/database-yz/lessons/01/</guid>
       <description>
 
 &lt;h1 id=&#34;tables-everywhere&#34;&gt;Tables everywhere&lt;/h1&gt;
@@ -114,10 +114,10 @@ Tabular layout
     
     <item>
       <title>Testing experimental features</title>
-      <link>http://localhost/lessons/sandbox/</link>
+      <link>https://kenpu.github.io/database-yz/lessons/sandbox/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost/lessons/sandbox/</guid>
+      <guid>https://kenpu.github.io/database-yz/lessons/sandbox/</guid>
       <description>
 
 &lt;h1 id=&#34;experimental-features&#34;&gt;Experimental features&lt;/h1&gt;
