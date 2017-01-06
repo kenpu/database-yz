@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Database Systems</title>
+    <link>http://localhost/index.xml</link>
+    <description>Recent content on Database Systems</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title></title>
+      <link>http://localhost/footer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/footer/</guid>
+      <description>&lt;div style=&#34;position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;&#34;&gt;
+Ying Zhu &lt;span class=&#34;fa fa-copyright&#34;&gt;&lt;/span&gt;, 2017
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost/header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/header/</guid>
+      <description>
+
+&lt;h1 id=&#34;database-systems-infr-3810&#34;&gt;Database Systems (INFR 3810)&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This course introduces the field of database systems for students with a basic
+knowledge of storage and file management capabilities of a modern computer
+system and features of one or more high-level programming language. Coverage
+includes general concepts, the relational model, theory and practice of
+database design, transaction management, how relational concepts are relevant
+to other aspects of database technology, and the impact of object technology
+on database systems. It also covers security issues of database systems,
+including disaster recovery and network intrusion.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;instructor&#34;&gt;Instructor&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Ying Zhu&lt;/em&gt;, PhD &lt;br&gt;
+ying.zhu &lt;span class=&#34;fa fa-at&#34; style=&#34;color: blue&#34;&gt;&lt;/span&gt; uoit.ca &lt;br&gt;
+Associate Professor, Faculty of Business &amp;amp; IT, UOIT &lt;br&gt;
+Oshawa, ON, Canada&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tables everywhere</title>
+      <link>http://localhost/lessons/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/lessons/01/</guid>
+      <description>
+
+&lt;h1 id=&#34;tables-everywhere&#34;&gt;Tables everywhere&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;highlight&#34;&gt;!&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;the-first-mcdonald-s-ledger-1959&#34;&gt;The first McDonald&amp;rsquo;s ledger, 1959&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&#34;mcdonald-ledger-1959.png&#34;&gt;&lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;note&#34;&gt;!&lt;/a&gt;
+The sales ledger from Lou Groen’s opening day of business, January 13, 1959, at
+his first McDonald’s in Monfort Heights, Ohio. Image courtesy of Paul Groen.&lt;/p&gt;
+
+&lt;h1 id=&#34;new-york-city-burial-record-1830&#34;&gt;New York City Burial Record, 1830&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&#34;burial-record-1830.jpg&#34;&gt;&lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;note&#34;&gt;!&lt;/a&gt;
+The Original Ledger of Burial Records, New York Marble Cemetery.
+&lt;a href=&#34;https://greenwichvillagehistory.wordpress.com/2012/11/13/&#34;&gt;Original source&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;tycho-brahe-s-star-catalog-1602&#34;&gt;Tycho Brahe&amp;rsquo;s Star Catalog, 1602&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&#34;tycho.jpg&#34;&gt;&lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;note&#34;&gt;!&lt;/a&gt;
+By 1592, Tycho had produced a catalogue of 777 stars, the first new catalogue
+known to the Latin West since the time of Ptolemy. This catalogue was printed
+for inclusion in the Astronomiae instauratae progymnasmata.&lt;/p&gt;
+
+&lt;h1 id=&#34;hockey-statistics-2014&#34;&gt;Hockey Statistics, 2014&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&#34;hockey.jpg&#34;&gt;&lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;note&#34;&gt;!&lt;/a&gt; NHL players of 2014&lt;/p&gt;
+
+&lt;h1 id=&#34;ebola-clinical-records-2015&#34;&gt;Ebola clinical records, 2015&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&#34;ebola-2015.jpg&#34;&gt;&lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;note&#34;&gt;!&lt;/a&gt; Tracking cases at the Liberian Ministry of Health and Social Welfare.
+&lt;a href=&#34;http://motherboard.vice.com/read/ebolas-paper-trail&#34;&gt;Original source&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;what-s-in-common&#34;&gt;What&amp;rsquo;s in common?&lt;/h1&gt;
+
+&lt;p&gt;&lt;center style=&#34;margin-top: 150px&#34;&gt;
+Tabular layout
+&lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Testing experimental features</title>
+      <link>http://localhost/lessons/sandbox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/lessons/sandbox/</guid>
+      <description>
+
+&lt;h1 id=&#34;experimental-features&#34;&gt;Experimental features&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;highlight&#34;&gt;!&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;animation&#34;&gt;Animation&lt;/h1&gt;
+
+&lt;p&gt;&lt;a class=&#34;first-slide&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Hello.&lt;/p&gt;
+
+&lt;h1 id=&#34;database&#34;&gt;Database&lt;/h1&gt;
+
+&lt;p&gt;&lt;a class=&#34;database&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;columns 6:&#34;&gt;!&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;query&#34;&gt;Query&lt;/h2&gt;
+
+&lt;p&gt;&lt;textarea id=&#34;sql1&#34; rows=14&gt;&lt;/textarea&gt;
+&lt;button class=&#34;run&#34;&gt;Run&lt;/button&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;split&#34;&gt;!&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+
+&lt;div class=&#34;output&#34;&gt;&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
