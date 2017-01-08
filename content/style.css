@@ -2,6 +2,9 @@ body {
     font-family: ETBembo;
 }
 
+red { color: crimson; }
+blue { color: #55f; }
+
 /* ============== Index =============== */
 
 [type=index] {
@@ -22,20 +25,21 @@ body {
 .reveal pre.err {
     color: red;
 }
-.reveal table.sql-result {
+.reveal table {
     margin-left: 0;
     font-family: "Ubunto Mono", monospace;
     font-size: 80%;
     border-collapse: collapse;
 }
-.reveal table.sql-result thead {
+.reveal table thead {
     font-family: Roboto;
     color: #333;
     background: #eee;
 }
-.reveal table.sql-result td {
+.reveal table td,
+.reveal table thead th,
+.reveal table tbody tr:last-child th, 
+.reveal table tbody tr:last-child td {
     border: thin solid #aaa;
 }
-.reveal table tbody tr:last-child th, .reveal table tbody tr:last-child td {
-    border: thin solid #aaa;
-}
+
