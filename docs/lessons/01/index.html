@@ -1,0 +1,782 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Tables everywhere</title>
+
+        <link rel="stylesheet" href="https://kenpu.github.io/database-yz//css/bootstrap.css">
+        <link rel="stylesheet" href="https://kenpu.github.io/database-yz//css/fonts/fonts.css">
+        <link rel="stylesheet" href="https://kenpu.github.io/database-yz//css/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://kenpu.github.io/database-yz//reveal.js/css/reveal.css">
+        <link rel="stylesheet" href="https://kenpu.github.io/database-yz//reveal.js/css/theme/white.css">
+
+		
+        
+        <link rel="stylesheet" href="https://kenpu.github.io/database-yz//reveal.js/lib/css/github.css">
+
+		
+		<script>
+            if(window.location.search.match(/print-pdf/gi)) {
+                window.print_pdf = true;
+            }
+            if(window.location.search.match(/receiver/)) {
+                window.remote_controller = true;
+            }
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+            link.href = window.print_pdf ? 'https:\/\/kenpu.github.io\/database-yz\//reveal.js/css/print/pdf.css' : 'https:\/\/kenpu.github.io\/database-yz\//reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+        <link rel="stylesheet" href="https://kenpu.github.io/database-yz//css/reveal-style.css">
+        <link rel="stylesheet" href="https://kenpu.github.io/database-yz//style.css">
+	</head>
+	<body>
+        <div class="reveal" type="slide">
+            <div class="slides" style="opacity: 0">
+
+<h1 id="tables-everywhere">Tables everywhere</h1>
+
+<p><a href="highlight">!</a></p>
+
+<h1 id="the-first-mcdonald-s-ledger-1959">The first McDonald&rsquo;s ledger, 1959</h1>
+
+<p><img src="mcdonald-ledger-1959.png"></img></p>
+
+<p><a href="note">!</a>
+The sales ledger from Lou Groen’s opening day of business, January 13, 1959, at
+his first McDonald’s in Monfort Heights, Ohio. Image courtesy of Paul Groen.</p>
+
+<h1 id="new-york-city-burial-record-1830">New York City Burial Record, 1830</h1>
+
+<p><img src="burial-record-1830.jpg"></img></p>
+
+<p><a href="note">!</a>
+The Original Ledger of Burial Records, New York Marble Cemetery.
+<a href="https://greenwichvillagehistory.wordpress.com/2012/11/13/">Original source</a></p>
+
+<h1 id="tycho-brahe-s-star-catalog-1602">Tycho Brahe&rsquo;s Star Catalog, 1602</h1>
+
+<p><img src="tycho.jpg" height="500px"></img></p>
+
+<p><a href="note">!</a>
+By 1592, Tycho had produced a catalogue of 777 stars, the first new catalogue
+known to the Latin West since the time of Ptolemy. This catalogue was printed
+for inclusion in the Astronomiae instauratae progymnasmata.</p>
+
+<h1 id="hockey-statistics-2014">Hockey Statistics, 2014</h1>
+
+<p><img src="hockey.jpg"></img></p>
+
+<p><a href="note">!</a> NHL players of 2014</p>
+
+<h1 id="ebola-clinical-records-2015">Ebola clinical records, 2015</h1>
+
+<p><img src="ebola-2015.jpg"></img></p>
+
+<p><a href="note">!</a> Tracking cases at the Liberian Ministry of Health and Social Welfare.
+<a href="http://motherboard.vice.com/read/ebolas-paper-trail">Original source</a></p>
+
+<h1 id="what-s-in-common">What&rsquo;s in common?</h1>
+
+<p><center style="margin-top: 150px">
+Tabular layout
+</center></p>
+
+<h1 id="tables">Tables</h1>
+
+<p><a href="highlight">!</a></p>
+
+<h1 id="terminologies">Terminologies</h1>
+
+<p><a href="columns 6:">!</a></p>
+
+<table>
+<thead>
+<tr>
+<th>City</th>
+<th>Province</th>
+<th>Population</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Oshawa</td>
+<td>Ontario</td>
+<td>140,000</td>
+</tr>
+
+<tr>
+<td>Toronto</td>
+<td>Ontario</td>
+<td>2,600,000</td>
+</tr>
+
+<tr>
+<td>Montreal</td>
+<td>Quebec</td>
+<td>1,600,000</td>
+</tr>
+
+<tr>
+<td>Clarington</td>
+<td>Ontario</td>
+<td>84,000</td>
+</tr>
+
+<tr>
+<td>Paris</td>
+<td>Ontario</td>
+<td>11,000</td>
+</tr>
+
+<tr>
+<td>Brooklin</td>
+<td>Ontario</td>
+<td>NULL</td>
+</tr>
+</tbody>
+</table>
+
+<p><a href="split">!</a></p>
+
+<p><em>Some definitions:</em></p>
+
+<blockquote>
+<ul>
+<li>Table (relation)</li>
+<li>Attributes (columns)</li>
+<li>Tuples (rows)</li>
+<li>Values (cell)</li>
+</ul>
+</blockquote>
+
+<h1 id="table">Table</h1>
+
+<p><a href="columns 6:">!</a></p>
+
+<table>
+<thead>
+<tr>
+<th>City</th>
+<th>Province</th>
+<th>Population</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Oshawa</td>
+<td>Ontario</td>
+<td>140,000</td>
+</tr>
+
+<tr>
+<td>Toronto</td>
+<td>Ontario</td>
+<td>2,600,000</td>
+</tr>
+
+<tr>
+<td>Montreal</td>
+<td>Quebec</td>
+<td>1,600,000</td>
+</tr>
+
+<tr>
+<td>Clarington</td>
+<td>Ontario</td>
+<td>84,000</td>
+</tr>
+
+<tr>
+<td>Paris</td>
+<td>Ontario</td>
+<td>11,000</td>
+</tr>
+
+<tr>
+<td>Brooklin</td>
+<td>Ontario</td>
+<td>NULL</td>
+</tr>
+</tbody>
+</table>
+
+<p><a href="split">!</a></p>
+
+<p>This is a table.  It consists of</p>
+
+<ul>
+<li>three attributes</li>
+<li>six tuples</li>
+<li>17 data values, and one missing value.</li>
+</ul>
+
+<h1 id="attribute">Attribute</h1>
+
+<p>An <em>attribute</em> is a column in a table.  It consists</p>
+
+<ul>
+<li>a name</li>
+<li>a data type.</li>
+</ul>
+
+<p><a href="columns 5:">!</a></p>
+
+<table>
+<thead>
+<tr>
+<th>City</th>
+<th>Province</th>
+<th>Population</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+
+<p><a href="split">!</a></p>
+
+<ul>
+<li>There are three attributes.</li>
+<li>The first attribute is <code>City</code>, and its data type is <code>string</code>.</li>
+<li>The last attribute is <code>Population</code>, and its data type is <code>integer</code>.</li>
+</ul>
+
+<h1 id="tuple">Tuple</h1>
+
+<p>A tuple is a row of data in a table.</p>
+
+<p><a href="columns 6:">!</a></p>
+
+<table>
+    <thead>
+    <tr>
+        <th>City</th>
+        <th>Province</th>
+        <th>Population</th>
+    </tr>
+    </thead>
+    <tr style=background:#a6a>
+        <td>Paris</td>
+        <td>Ontario</td>
+        <td>11,000</td>
+    </tr>
+    <tr style="background: #afa">
+        <td>Brooklin</td>
+        <td>Ontario</td>
+        <td>NULL</td>
+    </tr>
+</table>
+
+<p><a href="split">!</a></p>
+
+<p>Here are two tuples:</p>
+
+<ul>
+<li><p>The first tuple has three attributes, and their respective data values.</p></li>
+
+<li><p>The second tuple also has the same three attributes, but different data
+values.  Also the second tuple has a <em>missing</em> value.</p></li>
+</ul>
+
+<h1 id="data-representation">Data Representation</h1>
+
+<p><a href="highlight">!</a></p>
+
+<h1 id="data-modeling">Data Modeling</h1>
+
+<ul>
+<li><p>Data in a specific domain</p>
+
+<blockquote>
+<p>For example:</p>
+
+<ol>
+<li>Student records</li>
+<li>Google map</li>
+<li>Network traffic</li>
+</ol>
+</blockquote>
+
+<p>This data is not in any particular form. <a href="box">!</a></p></li>
+
+<li><p>Design the <em>layout</em> of one or more <em>tables</em> to store the domain specific data.</p>
+
+<blockquote>
+<p>The data must be stored in a lossless form.</p>
+
+<p>This is <strong>data modeling</strong>.</p>
+</blockquote></li>
+</ul>
+
+<h1 id="case-study-a-social-graph-as-tables">Case study: a social graph as tables</h1>
+
+<p><a href="columns 6:">!</a></p>
+
+<p><img src="social-graph.png"></img></p>
+
+<p><a href="split">!</a></p>
+
+<p>Here is a simple social graph between four individuals.</p>
+
+<p>How do we encode this as one or more tables?</p>
+
+<h1 id="toc_15">___________________</h1>
+
+<p><a href="columns 6:">!</a></p>
+
+<p><img src="social-graph.png"></img></p>
+
+<p><a href="split">!</a></p>
+
+<table>
+<thead>
+<tr>
+<th>person</th>
+<th>knows</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Steve Jobs</td>
+<td>Marissa Mayer</td>
+</tr>
+
+<tr>
+<td>Steve Jobs</td>
+<td>Bill Gates</td>
+</tr>
+
+<tr>
+<td>Bill Gates</td>
+<td>Marissa Mayer</td>
+</tr>
+
+<tr>
+<td>Bill Gates</td>
+<td>Bill Job</td>
+</tr>
+</tbody>
+</table>
+
+<p><a href="***">!</a></p>
+
+<p>It&rsquo;s important to note that this is a <em>lossless</em> encoding of the social graph.</p>
+
+<h1 id="toc_16">________________________</h1>
+
+<p><a href="columns 8:">!</a></p>
+
+<p><img src="social-graph-2.png"></img></p>
+
+<p><a href="split">!</a></p>
+
+<p>How do we model the additional information of the augmented social graph?</p>
+
+<h1 id="toc_17">___________________________</h1>
+
+<p><a href="columns 5:">!</a></p>
+
+<p><img src="social-graph-2.png"></img></p>
+
+<p><a href="split">!</a></p>
+
+<p>Use more tables <a href="box">!</a></p>
+
+<table>
+<thead>
+<tr>
+<th>person</th>
+<th>knows</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Steve Jobs</td>
+<td>Marissa Mayer</td>
+</tr>
+
+<tr>
+<td>Steve Jobs</td>
+<td>Bill Gates</td>
+</tr>
+
+<tr>
+<td>Bill Gates</td>
+<td>Marissa Mayer</td>
+</tr>
+
+<tr>
+<td>Bill Gates</td>
+<td>Bill Joy</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th>person</th>
+<th>position</th>
+<th>company</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Steve Jobs</td>
+<td>CEO</td>
+<td>Apple</td>
+</tr>
+
+<tr>
+<td>Marissa Mayer</td>
+<td>CEO</td>
+<td>Yahoo</td>
+</tr>
+
+<tr>
+<td>Bill Gates</td>
+<td>Chairman</td>
+<td>Microsoft</td>
+</tr>
+
+<tr>
+<td>Bill Joy</td>
+<td>Chief Scientist</td>
+<td>SUN Microsystems</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="toc_18">___________________________</h1>
+
+<p>What if we use one table? <a href="box">!</a></p>
+
+<p><a href="columns 7:">!</a></p>
+
+<table>
+<thead>
+<tr>
+<th>person</th>
+<th>position</th>
+<th>company</th>
+<th>knows</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Steve Jobs</td>
+<td>CEO</td>
+<td>Apple</td>
+<td>Marissa Mayer</td>
+</tr>
+
+<tr>
+<td>Steve Jobs</td>
+<td><red>CEO</red></td>
+<td><red>Apple</red></td>
+<td>Bill Gates</td>
+</tr>
+
+<tr>
+<td>Bill Gates</td>
+<td>Chairman</td>
+<td>Microsoft</td>
+<td>Marissa Mayer</td>
+</tr>
+
+<tr>
+<td>Bill Gates</td>
+<td><red>Chairman</red></td>
+<td><red>Microsoft</red></td>
+<td>Bill Joy</td>
+</tr>
+
+<tr>
+<td>Marissa Mayer</td>
+<td>CEO</td>
+<td>Yahoo</td>
+<td><blue>NULL</blue></td>
+</tr>
+
+<tr>
+<td>Bill Joy</td>
+<td>Chief Scientist</td>
+<td>SUN Microsystems</td>
+<td><blue>NULL</blue></td>
+</tr>
+</tbody>
+</table>
+
+<p><a href="split">!</a></p>
+
+<p>Forcing everything to be stored as a single table causes some issues:</p>
+
+<ol>
+<li><p>Data redundancy: <red>CEO</red> and <red>Apple</red> are storied multiple
+times just because <code>Steve Jobs</code> knows lots of people.</p></li>
+
+<li><p><blue>NULL</blue> values are used for <code>Marissa Mayer</code> and <code>Bill Joy</code>.</p></li>
+</ol>
+
+<h1 id="data-modeling-1">Data modeling</h1>
+
+<p>In this course, we will explore the theory and best practices of data modeling
+with tables.</p>
+
+<p><a href="***">!</a></p>
+
+<p>(A lot) more on this in the coming weeks.</p>
+
+<h1 id="summary">Summary</h1>
+
+<p><a href="highlight">!</a></p>
+
+<ul>
+<li><p>Tables</p></li>
+
+<li><p>Attributes</p></li>
+
+<li><p>Tuples</p></li>
+
+<li><p>Values (data and missing)</p></li>
+
+<li><p>Data modeling</p></li>
+</ul>
+
+<h1 id="what-s-to-come">What&rsquo;s to come.</h1>
+
+<p><a href="highlight">!</a></p>
+
+<h1 id="relational-data-model">Relational data model</h1>
+
+<ul>
+<li><p>Table schema and table instances</p></li>
+
+<li><p>Constraints to maintain data integrity</p></li>
+
+<li><p>Relational databases and expressing relational data in Structured Query
+Language (SQL)</p></li>
+</ul>
+
+<h1 id="data-analysis-using-sql">Data Analysis using SQL</h1>
+
+<ul>
+<li><p>Theory of relational algebra and SQL</p></li>
+
+<li><p>Aggregration and complex SQL</p></li>
+</ul>
+
+<h1 id="programming-interface-to-databases">Programming interface to databases</h1>
+
+<ul>
+<li><p>Python application programming interface (API)</p></li>
+
+<li><p>Case studies of database API</p></li>
+</ul>
+</div>
+        </div>
+
+        <div class="footnote" style="position: fixed; 
+            bottom:0; 
+            left:0;
+            padding: 10px;
+            font-family: Roboto;
+            font-weight: 600;
+            font-size: 12pt;
+            color: #88a;">
+            <div class="btn-group btn-group-sm">
+                <a href="#" class="btn btn-default cmd-fullscreen">
+                    <i class="fa fa-arrows-alt"></i></a>
+                <a href="?print-pdf" class="btn btn-default cmd" style="color:red">
+                    <i class="fa fa-file-pdf-o"></i>
+                </a>
+                <a href="../.." class="btn btn-default" 
+                    style="font-family:'Old Standard TT'; font-style:italic">
+                    <i lass="fa fa-angle-left"></i> home </a>
+            </div>
+        </div>
+
+        <script src="https://kenpu.github.io/database-yz//js/jquery-2.2.1.min.js"></script>
+        <script src="https://kenpu.github.io/database-yz//js/pdf.js"></script>
+        <script src="https://kenpu.github.io/database-yz//js/clipboard.min.js"></script>
+        <script src="https://kenpu.github.io/database-yz//js/sql.js"></script>
+
+        <script src="https://kenpu.github.io/database-yz//reveal.js/lib/js/head.min.js"></script>
+        <script src="https://kenpu.github.io/database-yz//reveal.js/js/reveal.js"></script>
+
+        <script src="https://kenpu.github.io/database-yz//script.js"></script>
+
+        
+
+        <script>
+        window.invokeHandler = function(f, args) {
+            if(f) f.apply(null, args);
+        };
+        if(window.print_pdf || window.remote_controller) {
+            $("div.footnote").remove();
+            window.invokeHandler = function() { }
+        }
+        var fullscreen = false;
+        $("body").on("click", ".cmd-fullscreen", function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            function exitFullscreen() {
+              if(document.exitFullscreen) {
+                document.exitFullscreen();
+              } else if(document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+              } else if(document.webkitExitFullscreen) {
+                document.webkitExitFullscreen();
+              }
+              fullscreen = false;
+            }
+
+            function launchIntoFullscreen(element) {
+              if(element.requestFullscreen) {
+                element.requestFullscreen();
+              } else if(element.mozRequestFullScreen) {
+                element.mozRequestFullScreen();
+              } else if(element.webkitRequestFullscreen) {
+                element.webkitRequestFullscreen();
+              } else if(element.msRequestFullscreen) {
+                element.msRequestFullscreen();
+              }
+              fullscreen = true;
+            }
+
+            if(fullscreen)
+                exitFullscreen();
+            else
+                launchIntoFullscreen(document.documentElement); 
+        });
+
+        
+        function isBreak($p, $section) {
+            if($p.is("h1") && $section.children().size() > 0)
+                return true;
+
+            var a = $p.find("a:first");
+            if(a.size() > 0 &&
+                    a.text() == "!" && 
+                    a.attr("href") == "break") {
+                a.detach();
+                return true;
+            }
+            return false;
+        }
+        $(function() {
+            var $reveal = $(".reveal > .slides");
+            var $elems = $reveal.children();
+            var $section = $("<section>");
+            for(var i=0; i < $elems.length; i++) {
+                var $elem = $($elems[i]);
+                if(isBreak($elem, $section)) {
+                    $section.appendTo($reveal);
+                    $elem.appendTo($section)
+                        .wrap("<aside class='notes'>");
+                    $section = $("<section>");
+                    if($elem.is("h1")) {
+                        $elem.appendTo($section);
+                    }
+                } else {
+                    $elem.appendTo($section);
+                }
+            }
+            if($section.children().length > 0) {
+                $section.appendTo($reveal);
+            }
+
+            startReveal($reveal);
+        });
+
+        function startReveal($slides) {
+			Reveal.initialize({
+                controls: false, 
+				history: true,
+                slideNumber: true,
+                center: false,
+                transition: "zoom",
+                transitionSpeed: "fast",
+
+                chalkboard: { 
+                    
+                    
+                },
+
+
+				
+				dependencies: [
+                    {src: 'https:\/\/kenpu.github.io\/database-yz\//reveal.js/plugin/notes/notes.js', async: true },
+                    {src: 'https:\/\/kenpu.github.io\/database-yz\//reveal.js/plugin/highlight/highlight.js', 
+                        async: true, 
+                        callback: function() { hljs.initHighlightingOnLoad(); } 
+                    },
+                    {src: 'https:\/\/kenpu.github.io\/database-yz\//reveal.js/plugin/hljslinenumber/index.js', async: true},
+                    
+                    {src: 'https:\/\/kenpu.github.io\/database-yz\//reveal.js/plugin/math/math.js', async: true },
+                    {src: 'https:\/\/kenpu.github.io\/database-yz\//reveal.js/plugin/multicolumn/multicolumn.js', async: true },
+                    {src: 'https:\/\/kenpu.github.io\/database-yz\//reveal.js/plugin/kensextensions/main.js', async: true },
+                    {src: 'https:\/\/kenpu.github.io\/database-yz\//reveal.js/plugin/pdfviewer/pdfviewer.js', async: true},
+                ],
+			});
+            Reveal.addEventListener('ready', function() {
+                console.debug("Ready to reveal");
+                $slides.animate({
+                    opacity: 1.0,
+                });
+                if(window.myEvents) myEventReady(window.myEvents);
+            });
+
+            Reveal.addEventListener("slidechanged", function(e) {
+                if(window.myEvents) myEventSlide(window.myEvents, e);
+            });
+        }
+
+        function myEventReady(evs) {
+            console.debug("myEventReady", evs);
+            for(var selector in evs) {
+                var handlers = evs[selector];
+                $(".reveal section").each(function() {
+                    var $section = $(this);
+                    if($section.find(selector).size() > 0) {
+                        window.invokeHandler(handlers.init, [$section]);
+                    }
+                });
+            }
+        }
+
+        function myEventSlide(evs, e) {
+            var $current = $(e.currentSlide);
+            for(var selector in evs) {
+                var handlers = evs[selector];
+                var $anchor = $current.find(selector);
+                if($anchor.size() > 0) {
+                    if(! $anchor.is(".invoked-once")) {
+                        window.invokeHandler(handlers.once, [$current]);
+                        $anchor.addClass("invoked-once");
+                    }
+                    window.invokeHandler(handlers.enter, [$current]);
+                }
+            }
+        }
+		</script>
+	</body>
+</html>
+
