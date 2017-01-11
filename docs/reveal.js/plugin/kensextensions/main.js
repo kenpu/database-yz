@@ -116,6 +116,17 @@
             }).wrapInner(div);
             $a.detach();
         }
+        else if(cmd[0] == "middle") {
+            var div = $("<div>").css({
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                height: 600,
+                padding: 20,
+            }).append("<div>");
+            $a.closest("section").wrapInner(div);
+            $a.detach();
+        }
         // =========================================
         else if(cmd[0] == "box") {
             $a.parent().css({
@@ -127,6 +138,16 @@
         // =========================================
         else if(cmd[0] == "note") {
             processNote($a, (cmd.length > 1) ? cmd[1] : "");
+            $a.detach();
+        }
+        // =========================================
+        else if(cmd[0] == "scale") {
+            var scale = (cmd.length > 1) ? cmd[1] : 1.0;
+            var $slide = $a.closest("section");
+            $slide.css({
+                transform: 'scale(' + scale + ')',
+                transformOrigin: "0 0",
+            });
             $a.detach();
         }
     }

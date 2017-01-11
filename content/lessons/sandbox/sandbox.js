@@ -16,10 +16,11 @@ var myEvents = {
     ".database": {
         init: function($slide) {
             var deferred = asyncLoadDb('sample.sqlite3');
-            var db = null;
+            db = null;
             deferred.then(function(d) {
                 console.debug("database loaded.");
                 db = d;
+                window.db = db;
             });
 
             var text = $("textarea", $slide);
@@ -29,7 +30,12 @@ var myEvents = {
                 executeSQL(db, sql, out);
             });
         },
-    }
+    },
+    ".queries": {
+        init: function($slide) {
+                  evalSQLScripts($slide);
+              },
+    },
 };
 
 

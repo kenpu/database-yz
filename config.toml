@@ -4,5 +4,4 @@ title = "Database Systems"
 publishDir = "docs"
 
 [params]
-
-
+useSQL = true

@@ -29,3 +29,39 @@ Hello.
 ## Results
 
 <div class="output"></div>
+
+# Some queries
+
+<a class="queries"></a>
+
+[!](columns 4:)
+
+Consider the following two relations:
+
+$T =$
+
+<script type=sql>
+SELECT * FROM T;
+</script>
+
+$S =$
+
+<script type=sql>
+SELECT * FROM S;
+</script>
+
+[!](split)
+
+Can you believe it?
+
+$T\times S = $
+
+<script type=sql>
+SELECT * FROM T, S;
+</script>
+
+But the join is just:
+
+<script type=sql>
+SELECT * FROM T join S using (a);
+</script>

@@ -55,6 +55,51 @@ Oshawa, ON, Canada&lt;/p&gt;
     </item>
     
     <item>
+      <title>Relational Databases</title>
+      <link>https://kenpu.github.io/database-yz/lessons/02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kenpu.github.io/database-yz/lessons/02/</guid>
+      <description>
+
+&lt;h1 id=&#34;relational-databases&#34;&gt;Relational Databases&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;highlight&#34;&gt;!&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;background&#34;&gt;Background&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;scale 0.8&#34;&gt;!&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;History&lt;/p&gt;
+
+&lt;p&gt;Invented in response to the increasing needs for data storage and data
+management from the growing financial banking industry.  &lt;a href=&#34;box&#34;&gt;!&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;1974: Invented by Edgar Frank Codd at IBM San Jose research lab.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;1977: Oracle Database&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;1982: IngreSQL, UC Berkeley&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;1983: IBM DB2&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;1989: Microsoft SQL Server&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;1995: MySQL&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;1996: PostgreSQL&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;2000: SQLite&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;2009: Amazon Relational Data Service (RDS)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;2015: Google Big Table Service&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Tables everywhere</title>
       <link>https://kenpu.github.io/database-yz/lessons/01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

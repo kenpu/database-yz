@@ -1,10 +1,55 @@
 (function(window) {
+// evaluate embedded SQL scripts to data tables
+// in a specific slide
+
+function evalSQLScript(db, $script, $out) {
+        var sql = $script.text();
+        if(sql) sql = sql.trim();
+        else return;
+
+        var verbose = $script.attr('verbose');
+
+        executeSQL(db, sql, $out.empty(), verbose);
+}
+
+function evalSQLScripts($slide, options) {
+    options = $.extend({}, options);
+    var $scripts = $("script[type=sql]", $slide);
+    var dbname = options.dbname || "db";
+
+    // create the output divs for the first invocation
+    if(! options.waiting) {
+        $scripts.each(function() {
+            var $script = $(this);
+            $out = $("<div>").text(
+                "Waiting for database \"" + dbname + "\" to load...");
+            $script.after($out);
+        });
+    }
+
+    // wait for database to load
+    var db = window[dbname];
+    if(db) {
+        console.debug("DB is loaded");
+        $scripts.each(function() {
+            var $script = $(this);
+            evalSQLScript(db, $script,  $script.next());
+        });
+    } else {
+        setTimeout(function() {
+            evalSQLScripts($slide, $.extend(options, {waiting: true}));
+        }, 1000);
+    }
+}
 
 //
 // executes a SQL against a database
 //
-function executeSQL(db, sql, out) {
+function executeSQL(db, sql, out, verbose) {
     out.empty();
+    if(verbose) {
+        out.append($("<pre>").text(sql))
+    }
     try {
         var results = db.exec(sql);
         window.results = results;
@@ -27,7 +72,6 @@ function executeSQL(db, sql, out) {
 }
 
 function renderTable(out, result) {
-    console.debug("render", result);
     var table = $("<table>").addClass("sql-result");
 
     // create the table header
@@ -73,5 +117,6 @@ function asyncLoadDb(url) {
 
 window.executeSQL = executeSQL;
 window.asyncLoadDb = asyncLoadDb;
+window.evalSQLScripts = evalSQLScripts;
 
 })(window);
